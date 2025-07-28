@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dockerized Apache - Fancy Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fafafa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff9800;
+        }
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #4caf50;
+            border-bottom: 2px solid #4caf50;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #2196f3;
+        }
+        h4 {
+            color: #e91e63;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .highlight {
+            background: #ffffcc;
+            padding: 10px;
+            border-left: 5px solid #ffeb3b;
+            margin: 20px 0;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Dockerized Apache Server!</h1>
+    <p>Running inside a container, serving colorful HTML 🎉</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#more">More</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About This Page</h2>
+    <p>This HTML page is served by an Apache HTTP Server running inside a Docker container on Ubuntu. It includes multiple headings, colors, and sections to make it look attractive.</p>
+    <div class="highlight">
+        <p><strong>Fun fact:</strong> Apache has been around since 1995 and is still widely used!</p>
+    </div>
+</section>
+
+<section id="features">
+    <h2>Features</h2>
+    <h3>🚀 Fast Deployment</h3>
+    <p>Using Docker, you can deploy this page within seconds anywhere you like.</p>
+
+    <h3>🛠 Easy Customization</h3>
+    <p>Modify the HTML and CSS to add your own style, branding, or functionality.</p>
+
+    <h3>🔒 Secure</h3>
+    <p>Run your container with proper configurations and security best practices.</p>
+
+    <h4>Bonus Tips</h4>
+    <ul>
+        <li>Use environment variables to configure your app.</li>
+        <li>Map volumes to keep your content persistent.</li>
+        <li>Use multi-stage builds to reduce image size.</li>
+    </ul>
+</section>
+
+<section id="more">
+    <h2>More Sections & Colors</h2>
+    <h3 style="color: #ff5722;">🔥 Orange Heading</h3>
+    <p>Orange brings energy and attention to important sections.</p>
+
+    <h3 style="color: #9c27b0;">💜 Purple Heading</h3>
+    <p>Purple is creative and makes your page stand out.</p>
+
+    <h3 style="color: #795548;">🪵 Brown Heading</h3>
+    <p>Brown adds an earthy, grounded feel to your page.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Have questions or want to contribute? Feel free to reach out!</p>
+    <p>Email: <a href="mailto:docker@example.com">docker@example.com</a></p>
+</section>
+
+<footer>
+    <p>© 2025 My Dockerized Apache Server. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
