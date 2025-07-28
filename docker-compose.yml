@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  movies:
+    image: tarunbaratam/pypy:latest
+    container_name: movies
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+
+  train:
+    image: tarunbaratam/gpay:latest
+    container_name: train
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+
+  dth:
+    image: tarunbaratam/paytm:latest
+    container_name: dth
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
